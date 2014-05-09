@@ -1,0 +1,31 @@
+/*
+ * CSS for the sp_postMedia class
+ * Used in front-end posts
+ */
+.sp-attachment-row:hover .sp-attachments-delete-button{
+    visibility: visible;
+}
+.sp-attachments-browse-img{
+    cursor: pointer;
+}
+.sp-attachments-delete-button{
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.sp-attachments-icon{
+    width: 22px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.sp-attachments-desc{
+    margin: 20px;
+}
+.sp-attachments-table-container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.sp-attachments-table{
+    width: 100%;
+}

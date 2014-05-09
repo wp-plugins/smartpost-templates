@@ -1,0 +1,61 @@
+/**
+ * CSS for the sp_quickPostWidget class
+ * Used on the front end for new posts
+ */
+#sp_qp_stack{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.sp_qp_component{
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ededed;
+}
+.sp_qp_component:hover{
+    background: #ededed;
+}
+.quickPostComps{
+	min-height: inherit !important;
+}
+.sp_add_post{
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+.sp_new_title{
+    margin-bottom: 5px;
+}
+.sp_new_title{
+	height: 35px;
+	width: 100%;
+    font-size: 24px;
+}
+.sp-settings-icon{
+    float: right;
+}
+button.sp_qp_button{
+	cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+}
+#sp_qp_response{
+	color: green;
+	cursor: pointer;
+}
+#sp_qp_responseDialog{
+	max-height: 400px;
+}
+#sp_quickpost_form{
+	display: none; padding: 5px; 
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 700px){
+    .sp_qp_component{
+        display: block;
+        clear: both;
+    }
+}
