@@ -147,11 +147,11 @@ if (!class_exists("sp_postComponent")) {
         }
 
         static function init_post_component(){
-            require_once('ajax/sp_postComponentAJAX.php');
+            require_once( dirname( __FILE__ ) . '/ajax/sp_postComponentAJAX.php');
             sp_postComponentAJAX::init();
             self::enqueueBaseJS();
             self::enqueueBaseCSS();
-            add_shortcode('sp_component', array('sp_postComponent' ,'spShortCodeComponent'));
+            add_shortcode( 'sp_component', array('sp_postComponent' ,'spShortCodeComponent') );
         }
 
         function enqueueBaseJS(){
@@ -180,7 +180,9 @@ if (!class_exists("sp_postComponent")) {
                     $class = 'sp_post' . $type;
                     if( class_exists( $class ) ){
                         $postComponent = new $class($id);
-                        $content = $postComponent->render();
+                        if( method_exists( $postComponent, 'render' ) ){
+                            $content = $postComponent->render();
+                        }
                     }
                 }
             }

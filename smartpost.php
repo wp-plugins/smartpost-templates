@@ -3,7 +3,7 @@
 Plugin Name: SmartPost
 Plugin URI: https://sptemplates.org
 Description: SmartPost is a dynamic templating and authoring tool that brings a lot of the features of the WordPress dashboard to the front end. SmartPost allows you to create category specific post templates that are then used by users on the front end to generates posts and content. Templates are broken down by post components such as pictures galleries, videos, and content blocks.
-Version: 2.3
+Version: 2.3.1
 Author: RafiLabs
 Author URI: http://www.rafilabs.com/
 License: GPLv2 or later
@@ -15,7 +15,7 @@ define("SP_PLUGIN_NAME", "SmartPost");
 define("SP_IMAGE_PATH", plugins_url('/images', __FILE__));
 define("SP_PLUGIN_PATH", plugins_url('/', __FILE__));
 define("SP_DEBUG", true); // Turns on useful errors that are dumped into the php error log for debugging
-define("SP_VERSION", "2.3");
+define("SP_VERSION", "2.3.1");
 
 if ( !class_exists("smartpost") ){
 
@@ -30,22 +30,22 @@ if ( !class_exists("smartpost") ){
          * Calls necessary initialization methods to initialize the plugin.
          */
         function __construct(){
-            require_once( 'core/sp_core.php' );
-            require_once( 'sp_install.php' );
-            require_once( 'sp_updates.php' );
+            require_once( dirname( __FILE__ ) . '/core/sp_core.php' );
+            require_once( dirname( __FILE__ ) . '/sp_install.php' );
+            require_once( dirname( __FILE__ ) . '/sp_updates.php' );
 
             $this->sp_init();
 
-            require_once( 'components/component/sp_catComponent.php' );
-            require_once( 'components/component/sp_postComponent.php' );
+            require_once( dirname( __FILE__ ) . '/components/component/sp_catComponent.php' );
+            require_once( dirname( __FILE__ ) . '/components/component/sp_postComponent.php' );
             sp_catComponent::init_cat_component();
             sp_postComponent::init_post_component();
 
             self::find_sp_classes( dirname(__FILE__) . "/components/" );
 
-            require_once( 'sp_category.php' );
-            require_once( 'sp_admin.php' );
-            require_once( 'sp_post.php' );
+            require_once( dirname( __FILE__ ) . '/sp_category.php' );
+            require_once( dirname( __FILE__ ) . '/sp_admin.php' );
+            require_once( dirname( __FILE__ ) . '/sp_post.php' );
 
             self::init_sp_classes( dirname(__FILE__) . "/widgets" );
 
@@ -162,6 +162,7 @@ if ( !class_exists("smartpost") ){
             wp_enqueue_script( 'jquery-editable' );
             wp_enqueue_script( 'plupload' );
             wp_enqueue_script( 'plupload-all' );
+            wp_enqueue_script( 'thickbox' );
 
             //Enqueue SmartPost scripts
             wp_enqueue_script( 'sp_globals' );

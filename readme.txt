@@ -2,7 +2,7 @@
 Contributors: rafdizzle86
 Donate link: http://rafilabs.com/
 Tags: templates, forms, front end editor, video, ffmpeg, picture gallery, media, uploader
-Stable tag: 2.3
+Stable tag: 2.3.1
 Requires at least: 3.8
 Tested up to: 3.9.1
 License: GPLv2 or later
@@ -101,6 +101,16 @@ to delete the following:
 
 == Changelog ==
 
+= 2.3.1 =
+* Fixed a bug where older versions of required_once() could not resolve relative paths properly
+* Fixed bug with exif_read_data() being called on incompatible file formats
+* Added extra check for update script from 2.x to 2.3+
+* Fixed a bug where updating from v2.2->2.3 would break component icons,
+* Moved away from hard-coding component icons
+* Updated content component, not using nicEditor  anymore
+* Updated gallery and photo components to reflect use of magnific-popup
+* Removed jQuery UI css - moved over to using thickbox for new template form
+
 = 2.3 =
 * Fixed a shortcode bug where SmartPost would strip all shortcodes from a post
 * Added new shortcode called [sp-components] that wraps around all [sp_components] shortcodes
@@ -113,6 +123,9 @@ to delete the following:
 * Initial release into to the WordPress plugin repository.
 
 == Upgrade Notice ==
+
+= 2.3.1 =
+* Users with older versions of PHP should update to 2.3.1 as require_once() may not resolve relative paths properly
 
 = 2.3 =
 Users should update to 2.3 due to a few major bugs that were fixed:
