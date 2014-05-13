@@ -120,7 +120,7 @@ to delete the following:
 * Fixed bug where .mp4 files were not being properly encoded and uploaded
 
 = 2.2 =
-* Initial release into to the WordPress plugin repository.
+* Initial release to the WordPress plugin repository.
 
 == Upgrade Notice ==
 
