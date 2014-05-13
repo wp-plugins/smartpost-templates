@@ -1,0 +1,109 @@
+/*
+ * CSS for the category components
+ * Use for front-end styling
+ */
+.componentHandle{
+    height: 18px;
+    cursor: move;
+    border: 1px solid #EEE;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    width: 50px;
+}
+.componentHandle .theHandle{
+    text-align: center;
+    transform:scale(2,1); /* W3C */
+    -webkit-transform:scale(2,1); /* Safari and Chrome */
+    -moz-transform:scale(2,1); /* Firefox */
+    -ms-transform:scale(2,1); /* IE 9 */
+    -o-transform:scale(2,1); /* Opera */
+}
+.componentHandle:hover{
+    background: #F1F1F1;
+}
+.componentHandle .theHandle:before{
+    content: "\f333";
+    font: 400 15px/1 dashicons;
+}
+.sp_delete{
+    visibility: hidden;
+    float: right;
+    cursor: pointer;
+}
+.sp_component, .sp-component-edit-mode{
+    padding: 5px;
+    background-color: white;
+    min-height: 75px;
+    line-height: 1.714285714;
+}
+.sp-component-edit-mode{
+    border: 1px solid #ededed;
+}
+.sp-component-edit-mode:hover{
+    border: 1px solid silver;
+}
+.sp-component-edit-mode:hover .sp_delete{
+    visibility: visible;
+}
+div.sp-component-edit-mode:hover .componentHandle{
+     visibility: visible;
+}
+#component_errors{
+    border: 1px solid red;
+    background-color: #FFEBE8;
+    padding: 5px;
+    display: none;
+    margin-bottom: 20px
+}
+#clearErrors{
+    float: right;
+    cursor: pointer;
+}
+#clearErrors:before{
+    margin: 0px;
+}
+.componentPlaceholder{
+    height: 100px;
+    margin-bottom: 10px;
+    border: 2px dotted silver;
+    border-radius: 3px;
+}
+.sp_component_helper{
+    max-height: 50px;
+    border: 2px solid silver;
+    background: white;
+    font-size: 14px;
+    -moz-box-shadow: 4px 5px 8px -2px black;
+    -webkit-box-shadow: 4px 5px 8px -2px black;
+    box-shadow: 4px 5px 8px -2px black;
+    cursor: move;
+}
+.editableCompTitle{
+    float: left;
+    cursor: pointer;
+}
+.sp_compTitleEditable{
+    display: inline;
+}
+.sp_compTitleEditable input{
+    display: inline !important;
+    height: inherit;
+    padding: inherit;
+    margin: inherit;
+    border: none;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    font-family: inherit;
+    min-width: 100px;
+    color: inherit;
+    line-height: inherit !important;
+    letter-spacing: inherit !important;
+}
+.sp-browse-button{
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
