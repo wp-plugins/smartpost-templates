@@ -3,7 +3,7 @@
 Plugin Name: SmartPost
 Plugin URI: https://sptemplates.org
 Description: SmartPost is a dynamic templating and authoring tool that brings a lot of the features of the WordPress dashboard to the front end. SmartPost allows you to create category specific post templates that are then used by users on the front end to generates posts and content. Templates are broken down by post components such as pictures galleries, videos, and content blocks.
-Version: 2.3.1
+Version: 2.3.2
 Author: RafiLabs
 Author URI: http://www.rafilabs.com/
 License: GPLv2 or later
@@ -15,7 +15,7 @@ define("SP_PLUGIN_NAME", "SmartPost");
 define("SP_IMAGE_PATH", plugins_url('/images', __FILE__));
 define("SP_PLUGIN_PATH", plugins_url('/', __FILE__));
 define("SP_DEBUG", true); // Turns on useful errors that are dumped into the php error log for debugging
-define("SP_VERSION", "2.3.1");
+define("SP_VERSION", "2.3.2");
 
 if ( !class_exists("smartpost") ){
 
@@ -117,14 +117,12 @@ if ( !class_exists("smartpost") ){
          * Places globally used SmartPost CSS on the page.
          */
         static function enqueue_sp_css(){
-            wp_register_style( 'jquery-ui-theme', plugins_url('/css/jquery-ui-theme/jquery-ui-1.10.3.custom.css', __FILE__));
             wp_register_style( 'jquery-dynatree-css', plugins_url('js/dynatree/skin/ui.dynatree.css', __FILE__) );
             wp_register_style( 'tooltipster-css', plugins_url('js/tooltipster/css/tooltipster.css', __FILE__) );
             wp_register_style( 'smartpost-css', plugins_url('css/smartpost.css', __FILE__) );
 
             wp_enqueue_style( 'dashicons' );
             wp_enqueue_style( 'jquery-dynatree-css' );
-            wp_enqueue_style( 'jquery-ui-theme' );
             wp_enqueue_style( 'tooltipster-css' );
             wp_enqueue_style( 'smartpost-css' );
         }
