@@ -143,6 +143,9 @@ to delete the following:
 
 == Upgrade Notice ==
 
+= 2.3.3 =
+* Removes an include on wp-load.php for the video conversion script
+
 = 2.3.2 =
 * Fixed an update bug that did not update WPMU sites correctly
 * New [sp-quickpost] shortcode allows users to place a SP Template form anywhere on the site!
