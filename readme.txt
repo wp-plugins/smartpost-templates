@@ -9,7 +9,6 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 SmartPost builds beautiful form templates that makes it quick and easy to generate posts on the front-end of your WordPress site.
-Templates can be saved for later, and can be copied to create new templates
 
 == Description ==
 
