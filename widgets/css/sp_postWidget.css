@@ -1,0 +1,33 @@
+/*
+ * CSS for the sp_admin class
+ * Used in the dashboard/admin page
+ */
+
+.catComponentWidget{
+    border: 1px solid silver;
+    margin-top: 5px;
+    text-align: left;
+    cursor: move;
+    max-width: 300px;
+    max-height: 100px;
+    padding: 10px;
+    background: white;
+}
+
+div.catComponentWidget:hover{
+    background-color: #F1F1F1;
+}
+.sp-edit-post{
+    font-size: 15px;
+}
+.sp-edit-post:before{
+    float: left;
+    color: inherit;
+}
+.sp-widget-post-settings #sp-tags-container{
+    display: inline-block;
+    width: auto;
+}
+.sp-widget-post-settings #sp-tags-container input{
+    width: auto;
+}
