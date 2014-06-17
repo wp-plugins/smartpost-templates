@@ -112,6 +112,12 @@ to delete the following:
 3. How a post looks after submitting it via a SmartPost template.
 
 == Changelog ==
+= 2.3.4 =
+* Fixes a compatibility issue with the Relevanssi plugin
+* Fixes an issue with video rotation
+* Adds .m4v video compatibility to the video component
+* Better error handling for video uploads and video conversions
+* Fixes a buffer output bug with the SP QuickPost widget
 
 = 2.3.3 =
 * Removes an include on wp-load.php for the video conversion script
@@ -142,6 +148,8 @@ to delete the following:
 * Initial release into to the WordPress plugin repository.
 
 == Upgrade Notice ==
+= 2.3.4 =
+* Better video handling and fixes a compatibility bug with the Relevanssi plugin
 
 = 2.3.3 =
 * Removes an include on wp-load.php for the video conversion script
