@@ -201,12 +201,10 @@
             var self = this;
             self.setTypeID();
 
-            // Bind filedrop to component div
             $( '.sp-photo' ).each(function(){
                 self.initFileDrop( $(this) );
             });
 
-            // Bind delete event to delete button
             $( '.sp-photo-delete-thumb' ).each(function(){
                 self.bindDelete( $(this) );
             });
@@ -223,9 +221,6 @@
             $( '.sp-photo-link' ).magnificPopup({
                 type:'image'
             });
-
-            // jQuery UI resizable
-            //$('.sp-photo-image').resizable();
         }
     };
 
