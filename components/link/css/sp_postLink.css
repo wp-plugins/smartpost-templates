@@ -1,0 +1,115 @@
+/*
+ * CSS for the sp_postLink class
+ * Used in front-end posts
+ */
+ 
+.sp_link_html, .sp_link_img, .sp_link_pdf{
+    float: left;
+    max-width: 110px;
+    max-height: 100px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.sp_link_thumbs{
+    float: left;
+    max-width: 110px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+.sp-link-thumbs-results{
+    height: 100px;
+}
+.sp_link_thumbs img{
+    max-width: 110px;
+    max-height: 100px;
+}
+.thumbSelection{
+    text-align: center;
+}
+.emptyLinkThumb{
+    float: left;
+    border: 1px dashed silver;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.sp-link-content{
+    clear: both;
+    display: block;
+    margin-top: 15px;
+}
+.sp_link_right_wrapper{
+    overflow: hidden;
+}
+.sp_the_link, .sp-link-view, .sp-link-desc-view{
+    margin: 10px;
+}
+.sp_the_link:before{
+    float: left;
+    visibility: hidden;
+}
+.sp_the_link:hover:before{
+    visibility: visible;
+}
+.sp_the_link:hover{
+    cursor: pointer;
+}
+.sp_the_link_editable input{
+    display: inline !important;
+    height: 25px !important;
+    border: 1px solid silver;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-right: 70px !important;
+    max-width: 70%;
+}
+.sp-link-placeholder{
+    color: #999;
+}
+.sp_link_prev{
+    height: 20px;
+    width: 20px;
+    border: 1px solid silver;
+}
+.sp_link_prev:before {
+    font-family: "dashicons";
+    content: "\f141";
+}
+.sp_link_prev:hover:before{
+    background: silver;
+}
+.sp_link_next{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    border: 1px solid silver;
+}
+.sp_link_next:before {
+    font-family: "dashicons";
+    content: "\f139";
+}
+.sp_link_next:hover:before{
+    background: silver;
+}
+.sp_link_select_thumb{
+    cursor: pointer;
+    font-size: 10px;
+    padding: 3px;
+    margin: 3px;
+}
+.sp-link-youtube-player{
+    text-align: center;
+    margin-top: 25px;
+}
+.sp_link_content{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sp-link-youtube-link{
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+/**
+ * CSS for the sp_postTreeWidget class
+ *
+ * Used on the front end for the SP Post Tree widget
+ */
+
+ul.dynatree-container{
+	border: none !important;
+}
+.sp_postTreeHidden{
+    display: none;
+}
+.sp-widget-cat-tree-container{
+    overflow-x: hidden;
+}
+.sp-widget-cat-tree-container ul li{
+    margin-left: 20px;
+    margin-top: 10px
+}
+.sp-widget-hide-node{
+    display: none;
+}
+.sp_catTree{
+    margin-bottom: 20px;
+}
