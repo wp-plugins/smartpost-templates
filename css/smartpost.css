@@ -1,0 +1,93 @@
+/**
+ * @author Rafi Yagudin
+ * @date 1/2/2014
+ * @project SmartPost
+ * @version 2.0
+ * Contains "global" SmartPost CSS shared among all SmartPost classes
+ */
+
+/* Usually used for deleting an object */
+.sp_xButton:before{
+    content: '\f153';
+    display: inline-block;
+    font: 400 16px/1 dashicons;
+    speak: none;
+    height: 20px;
+    margin: 2px 0;
+    text-align: center;
+    width: 20px;
+    -webkit-font-smoothing: antialiased!important;
+    color: #bbb;
+}
+.sp_xButton:hover:before{
+    color: red;
+}
+
+/* Usually used for deleting an object */
+.sp_trashIcon:before{
+    content: '\f182';
+    display: inline-block;
+    font: 400 16px/1 dashicons;
+    speak: none;
+    height: 20px;
+    margin: 2px 0;
+    text-align: center;
+    width: 20px;
+    -webkit-font-smoothing: antialiased!important;
+    color: #bbb;
+}
+.sp_trashIcon:hover:before{
+    color: red;
+}
+
+/* Editable elements */
+.sp_textIcon:before{
+    content: '\f119';
+    display: inline-block;
+    font: 400 16px/1 dashicons;
+    speak: none;
+    height: 20px;
+    margin: 2px 0;
+    text-align: center;
+    width: 20px;
+    -webkit-font-smoothing: antialiased!important;
+    color: #bbb;
+}
+.sp_textIcon:hover:before{
+    color: #21759b;
+}
+
+.sp-view-icon:before{
+    content: '\f177';
+    display: inline-block;
+    font: 400 16px/1 dashicons;
+    speak: none;
+    height: 20px;
+    margin: 2px 0;
+    text-align: center;
+    width: 20px;
+    -webkit-font-smoothing: antialiased!important;
+    color: #bbb;
+}
+.sp-view-icon:hover:before{
+    color: #21759b;
+}
+
+.sp-settings-icon:before{
+    content: "\f111";
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    line-height: 1;
+    font-family: "dashicons";
+    text-decoration: inherit;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: text-top;
+    -moz-transition: color .1s ease-in 0;
+    -webkit-transition: color .1s ease-in 0;
+    text-align: center;
+}
+.sp-settings-icon:hover:before{
+    color: #21759b;
+}

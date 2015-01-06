@@ -1,0 +1,189 @@
+/*
+ * CSS for the sp_admin class
+ * Used in the dashboard/admin page
+ */
+#compFormWrapper{
+    display: none;
+}
+#postComponents{
+    padding-top: 10px;
+}
+#categories_sidebar{
+    float: right;
+    width: 300px;
+    margin-right: 5px;
+}
+#category_settings{
+    padding: 5px;
+}
+.cat_title, .wp_cat_title {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+}
+.expandArrow{
+    padding-top: 5px;
+    cursor: pointer;
+}
+.postCompTitle, .category_title {
+    display: inline;
+}
+.category_icon{
+    float: left;
+    padding: 7px;
+}
+.categories_list {
+    padding: 5px;
+    background: #ECECEC;
+}
+.stuffbox{
+    margin-bottom: 5px;
+}
+.categories_list li{
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    cursor: move;
+    background: white;
+}
+.nav-tab-active{
+    border-color: #CCC #CCC #F9F9F9 !important;
+}
+.contCatTable{
+    margin-top: 10px;
+}
+.catCompDraggable{
+    border: 1px solid silver;
+    margin-top: 5px;
+}
+.catCompDraggable h3:hover{
+    color: orangered !important;
+}
+.requiredAndDefault{
+    float:right;
+}
+.requiredAndDefault label{
+    vertical-align: top !important;
+}
+input.requiredAndDefault{
+    vertical-align: text-bottom;
+}
+.dynatree-node{
+    width: 100%;
+}
+#normal-sortables .postbox .handlediv{
+    float: left;
+}
+#normal-sortables {
+    border: 2px dashed silver;
+    padding-top: 20px;
+}
+.sp-admin-tutorial{
+    min-height: 400px !important;
+    content: 'test';
+}
+#emptyComp{
+    text-align: center;
+}
+.editableCatCompTitle {
+    cursor: pointer;
+}
+.editableCatCompTitle form{
+    display: inline !important;
+}
+.editableCatCompTitle input{
+    height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    background: transparent;
+    padding: inherit;
+    margin: inherit;
+    border: none;
+    min-width: 150px;
+}
+.hndle:hover .delComp{
+    visibility: visible;
+}
+.hndle img{
+    vertical-align: middle;
+}
+.sortable-placeholder{
+    display: block;
+    min-height: 50px;
+}
+.catDragCompCount{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: white;
+    background: red;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 3px solid silver;
+    font-size: 14px;
+}
+#newCategoryForm{
+    display: none;
+}
+.hide{
+    visibility: hidden;
+    position: absolute;
+    top:-9999;
+    left: -9999;
+}
+#sp_errors, #sp_update{
+    float: left;
+}
+.hideMsg{
+    float: right;
+    cursor: pointer;
+    margin: .5em;
+}
+#expandAll{
+    cursor: pointer;
+}
+#expandAll:hover{
+    color: #0074a2;
+}
+#newTemplateForm{
+    display: none;
+}
+#the_settings{
+    position: relative;
+}
+#the_settings h3{
+    cursor: inherit;
+}
+.deleteCat{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.delComp{
+    float: right;
+    cursor: pointer;
+}
+.component-settings{
+    padding: 10px;
+}
+.sp-settings-item{
+    text-decoration: none;
+    margin: 10px;
+    clear: both;
+    display: block;
+    font-size: 18px;
+}
+.sp-settings-item img{
+    width: 16px;
+    height: 16px;
+}
+#sp-version{
+    clear: both;
+    text-align: right;
+}
+#sp_errors, #sp_update{
+    margin-top: .5em;
+}
